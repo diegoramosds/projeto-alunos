@@ -4,7 +4,10 @@ O projeto consiste em uma aplicação web para gerenciamento de informações de
 
 
 
+
+
 Funcionalidades Principais: <br>
+
 Cadastro de Alunos: Permite adicionar novos alunos com informações como nome, sobrenome, email, idade, peso e altura.<br>
 Edição de Alunos: Permite editar as informações dos alunos previamente cadastrados.<br>
 Exclusão de Alunos: Possibilita remover alunos do sistema.<br>
@@ -16,7 +19,10 @@ Controle de Autenticação: Implementa um sistema básico de controle de autenti
 
 
 
+
+
 Para rodar a aplicação:<br>
+
 Instale as dependências da pasta executando npm install<br>
 Inicie o servidor executando npm start dentro da pasta<br>
 
