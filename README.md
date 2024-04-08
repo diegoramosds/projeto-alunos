@@ -1,4 +1,4 @@
-O projeto consiste em uma aplicação web para gerenciamento de informações de alunos, oferecendo funcionalidades como adicionar, editar e excluir registros, bem como a capacidade de trocar a foto do aluno. Desenvolvida utilizando React no frontend e Node.js no backend, a aplicação integra-se a um banco de dados PostgreSQL para armazenar e gerenciar os dados dos alunos.
+O projeto consiste em uma aplicação web para gerenciamento de informações de alunos, oferecendo funcionalidades como adicionar, editar e excluir registros, bem como a capacidade de trocar a foto do aluno. Desenvolvida utilizando React no frontend e Node.js no backend,  para armazenar e gerenciar os dados dos alunos.
 
 
 Funcionalidades Principais: <br>
@@ -14,9 +14,8 @@ Controle de Autenticação: Implementa um sistema básico de controle de autenti
 
 Para rodar a aplicação:<br>
 
-Instale as dependências das pastas executando npm install<br>
-Inicie o servidor executando npm start dentro das pastas<br>
-
+Instale as dependências da pasta executando npm install<br>
+Inicie o servidor executando npm start dentro da pasta<br>
 
 
 
