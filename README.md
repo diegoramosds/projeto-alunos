@@ -13,8 +13,12 @@ Controle de Autenticação: Implementa um sistema básico de controle de autenti
 
 
 Para rodar a aplicação:<br>
+
 Instale as dependências das pastas executando npm install<br>
 Inicie o servidor executando npm start dentro das pastas<br>
 
-https://github.com/diegoramosds/projeto-alunos/assets/140274064/b9e163c4-651f-4f51-965a-2d3b043125f3
+
+
+
+https://github.com/diegoramosds/projeto-alunos/assets/140274064/f08afead-f76b-4a07-b746-29e1f5c51f98
 
