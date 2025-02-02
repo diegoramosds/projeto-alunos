@@ -1,10 +1,3 @@
-Para rodar a aplicação:<br>
-
-Instale as dependências da pasta executando npm install<br>
-Inicie o servidor executando npm start dentro da pasta<br>
-
-
-
 # 🎉 Participantes   
 
 ## 📽️ Demonstração  
