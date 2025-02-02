@@ -71,53 +71,30 @@ Antes de começar, certifique-se de ter instalado:
 
 ## ▶️ Passo a Passo  
 
-### 🛠 **Executando a API**  
 
 1️⃣ **Clone o repositório**:  
 ```bash
 git clone https://github.com/diegoramosds/projeto-alunos .git
-
 ```
 
-2️⃣ **Acesse o diretório da API** no terminal.
+2️⃣ Acesse o diretório da aplicação React no terminal.
 ```bash
-cd api
+cd projeto-alunos
 ```
 
-3️⃣ Execute para instalar as dependências do projeto.
-```bash
-npm install
-```
-
-4️⃣ Execute para iniciar o servidor da API.
-```bash
-npm run dev
-```
-
-5️⃣ Aguarde até que a API esteja rodando e ouvindo requisições na porta especificada.
-
-<br>
-
-### 💻 **Executando a Aplicação React** 
-
-1️⃣ Acesse o diretório da aplicação React no terminal.
-```bash
-cd pass-web
-```
-
-2️⃣ Execute  para instalar as dependências do projeto.
+3️⃣ Execute  para instalar as dependências do projeto.
 ```bash
 npm install
 ```
 
-3️⃣ Execute  para iniciar o servidor de desenvolvimento:
+4️⃣ Execute  para iniciar o servidor de desenvolvimento:
 ```bash
 npm start
 ```
 
-4️⃣ Aguarde até que a aplicação seja compilada e inicie no navegador.
+5️⃣ Aguarde até que a aplicação seja compilada e inicie no navegador.
 
-5️⃣ Acesse a aplicação pelo navegador no endereço fornecido pelo terminal.
+6️⃣ Acesse a aplicação pelo navegador no endereço fornecido pelo terminal.
 
 
 
