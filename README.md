@@ -46,8 +46,19 @@ Utiliza **react-toastify** para fornecer notificações sobre ações realizadas
 
 <br>  
 
-## 🚀 Como Rodar o Projeto  
+## 🚀 Como Rodar o Projeto
 
+
+## ⚠️ Sobre o Acesso 
+
+Este projeto foi originalmente desenvolvido utilizando o **Google Cloud** para hospedagem do backend e banco de dados. No entanto, o período gratuito da plataforma expirou, impossibilitando a manutenção do serviço ativo sem custos adicionais.  
+
+Por conta disso, o backend não está mais acessível publicamente no momento. Para aqueles que desejam testar a aplicação, será necessário configurar um próprio backend ou aguardar a atualização do projeto.  
+
+Atualmente, estou trabalhando para migrar o backend para uma solução alternativa, utilizando o **Firebase** como novo banco de dados. Em breve, todas as funcionalidades serão restauradas e documentadas aqui no repositório.  
+
+
+<!--
 ### 🔧 **Pré-requisitos**  
 
 Antes de começar, certifique-se de ter instalado:  
@@ -84,13 +95,10 @@ npm install
 ```bash
 npm start
 ```
-
 5️⃣ Aguarde até que a aplicação seja compilada e inicie no navegador.
 
 6️⃣ Acesse a aplicação pelo navegador no endereço fornecido pelo terminal.
-
-
-
+-->
 
 
 
