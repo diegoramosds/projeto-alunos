@@ -7,6 +7,7 @@ https://github.com/diegoramosds/projeto-alunos/assets/140274064/f08afead-f76b-4a
 
 <br>  
 
+
 ## 💻 Sobre o Projeto  
 
 O projeto consiste em uma aplicação web para gerenciamento de informações de alunos, oferecendo funcionalidades como adicionar, editar e excluir registros, bem como a capacidade de trocar a foto do aluno. Desenvolvida utilizando React no frontend e Node.js no backend,  para armazenar e gerenciar os dados dos alunos. 
