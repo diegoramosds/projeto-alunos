@@ -13,6 +13,7 @@ O projeto consiste em uma aplicação web para gerenciamento de informações de
 
 ---  
 
+
 <br>  
 
 ## 🚀 Tecnologias Utilizadas  
