@@ -23,7 +23,8 @@ O projeto consiste em uma aplicação web para gerenciamento de informações de
 
 - ✔️ **HTML, CSS, JavaScript** – Estrutura e estilização da aplicação  
 - ✔️ **React** – Construção da interface dinâmica e componentizada   
-- ✔️ **Node.js** – Para armazenar e gerenciar os dados dos alunos  
+- ✔️ **Node.js** – Para armazenar e gerenciar os dados dos alunos
+- ✔️ **Firebase** – Plataforma para autenticação, armazenamento e banco de dados em tempo real  
 
 ---  
 
