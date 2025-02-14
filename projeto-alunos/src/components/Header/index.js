@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 
 import * as actions from '../../store/modules/auth/actions';
-import history from '../../services/history';
+
 import { Nav } from './styled';
 
 export default function Header() {
@@ -14,18 +14,22 @@ export default function Header() {
 
   const handleLogout = (e) => {
     e.preventDefault();
-    dispatch(actions.loginFailure());
-    history.push('/');
+    dispatch(actions.logout());
   };
   return (
     <Nav>
       <Link to="/">
         <p>Home</p>
       </Link>
-      <Link to="/register">
-        <p>Registrar</p>
-      </Link>
-
+      {isLoggedIn ? (
+        <Link to="/register">
+          <p>Editar</p>
+        </Link>
+      ) : (
+        <Link to="/register">
+          <p>Registrar</p>
+        </Link>
+      )}
       {isLoggedIn ? (
         <Link onClick={handleLogout} to="/logout">
           <p>Sair</p>

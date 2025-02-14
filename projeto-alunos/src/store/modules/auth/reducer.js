@@ -1,59 +1,92 @@
-import * as types from '../types';
-import axios from '../../../services/axios';
-const initialState = {
-  isLoggedIn: false,
-  token: false,
-  user: {},
-  isLoading: false,
+const storedUser = JSON.parse(localStorage.getItem('user')) || {
+  id: null,
+  nome: null,
+  email: null,
 };
-export default function (state = initialState, action) {
+
+const initialState = {
+  user: storedUser,
+  isLoggedIn: !!storedUser.id,
+  isLoading: false,
+  error: null,
+};
+const authReducer = (state = initialState, action) => {
   switch (action.type) {
-    case types.LOGIN_SUCCESS: {
-      const newState = { ...state };
-      newState.isLoggedIn = true;
-      newState.token = action.payload.token;
-      newState.user = action.payload.user;
-      newState.isLoading = false;
-      return newState;
-    }
-    case types.LOGIN_FAILURE: {
-      delete axios.defaults.headers.Authorization;
-      const newState = { ...initialState };
-      return newState;
-    }
-    case types.LOGIN_REQUEST: {
-      const newState = { ...state };
-      newState.isLoading = true;
-      return newState;
-    }
+    case 'LOGIN_REQUEST':
+    case 'REGISTER_REQUEST':
+      return {
+        ...state,
+        isLoading: true,
+        error: null,
+      };
 
-    case types.REGISTER_REQUEST: {
-      const newState = { ...state };
-      newState.isLoading = true;
-      return newState;
-    }
+    case 'LOGIN_SUCCESS':
+    case 'REGISTER_CREATED_SUCCESS':
+      // eslint-disable-next-line no-case-declarations
+      const userData = {
+        id: action.payload.user?.id || null,
+        nome: action.payload.user?.nome || 'Usuário',
+        email: action.payload.user?.email || null,
+      };
 
-    case types.REGISTER_UPDATED_SUCCESS: {
-      const newState = { ...state };
-      newState.user.nome = action.payload.nome;
-      newState.user.email = action.payload.email;
-      newState.isLoading = false;
-      return newState;
-    }
+      localStorage.setItem('user', JSON.stringify(userData));
 
-    case types.REGISTER_CREATED_SUCCESS: {
-      const newState = { ...state };
-      newState.isLoading = false;
-      return newState;
-    }
-    case types.REGISTER_FAILURE: {
-      const newState = { ...state };
-      newState.isLoading = false;
-      return newState;
-    }
+      return {
+        ...state,
+        user: userData,
+        isLoggedIn: !!userData.id,
+        isLoading: false,
+        error: null,
+      };
 
-    default: {
+    case 'LOGIN_FAILURE':
+    case 'REGISTER_FAILURE':
+      return {
+        ...state,
+        isLoading: false,
+        error: action.payload,
+      };
+
+    case 'LOGOUT_SUCCESS':
+      localStorage.removeItem('user');
+      return {
+        ...state,
+        user: {
+          id: null,
+          nome: null,
+          email: null,
+        },
+        isLoggedIn: false,
+        isLoading: false,
+        error: null,
+      };
+
+    case 'LOGOUT_REQUEST':
+      return {
+        ...state,
+        user: {
+          id: null,
+          nome: null,
+          email: null,
+        },
+        isLoggedIn: false,
+        isLoading: false,
+        error: null,
+      };
+    case 'REGISTER_UPDATED_SUCCESS': {
+      return {
+        ...state,
+        user: {
+          ...state.user,
+          nome: action.payload.nome,
+          email: action.payload.email,
+        },
+        isLoading: false,
+      };
+    }
+    default:
       return state;
-    }
   }
-}
+};
+
+export default authReducer;
